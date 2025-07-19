@@ -1,0 +1,4 @@
+title : the area of a circle
+declaration : radius
+area = π * radius^2
+display area
