@@ -1,0 +1,41 @@
+#Celcius ke fahrenheit
+title : conversi Celcius ke fahrenheit
+decleration : °C, °F
+implementation : 
+°F = (°C * 9/5) + 32
+display °F
+
+#Celcius ke kelvin
+title : conversi Celcius ke kelvin
+decleration : °C, °K
+implementation : 
+°K = °C + 273, 15
+display °K
+
+#Fahrenheit ke Celcius
+title : conversi Fahrenheit ke celcius
+decleration : °F, °C
+implementation :
+°C = (°F - 32) * 5/9
+display °C
+
+#Fahrenheit ke Kelvin
+title : conversi Fahrenheit ke kelvin
+decleration : °F, °K
+implementation : 
+°K = ((°F - 32) * 5/9) + 273, 15
+display °K
+
+#Kelvin ke Celcius
+title : conversi Kelvin ke celcius
+decleration : °K, °C
+implementation : 
+°C = °K - 273, 15
+display °C
+
+#Kelvin ke fahrenheit
+title conversi Kelvin ke fahrenheit
+decleration : °K, °F
+implementation :
+°F = (°K * 9/5) - 459, 67
+display °F
