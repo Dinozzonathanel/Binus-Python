@@ -1,4 +1,5 @@
 title : the area of a football field
-Declaration: height, width
+Declaration : height, width
+implementation :
 area = height * width
 display area
