@@ -1,0 +1,7 @@
+title : passing or failing grade
+declaration : number
+implementation :
+if (number >= 75)
+  display "lulus"
+else
+  display "tidak lulus"
