@@ -1,4 +1,0 @@
-title : the area of a football field
-Declaration: height, width
-area = height * width
-display area
