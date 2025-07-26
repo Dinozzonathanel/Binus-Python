@@ -1,0 +1,7 @@
+NilaiA = int(input("Nilai A :"))
+NilaiB = int(input("Nilai B :"))
+NilaiC = int(input("Nilai C :"))
+
+Diskriminan = ((NilaiB ** 2) - (4 * NilaiA * NilaiC))
+
+print(Diskriminan)
