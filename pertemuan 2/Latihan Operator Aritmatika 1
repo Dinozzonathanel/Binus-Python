@@ -1,0 +1,9 @@
+panjang = int(input("panjang :")) 
+
+lebar = int(input("lebar :")) 
+
+tinggi = int(input("tinggi :"))
+
+volume = (panjang * lebar * tinggi)
+
+print(volume)
