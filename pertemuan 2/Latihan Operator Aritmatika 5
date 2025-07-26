@@ -1,0 +1,18 @@
+LatitudeA = float(input("Latitude dari titik A:"))
+LongtitudeA = float(input("Longtitude dari titik A:"))
+LatitudeB = float(input("Latitude dari titik B:"))
+LongtitudeB = float(input("Longtitude dari titik B:"))
+
+if (LatitudeA > LatitudeB):
+    difference_oflatitude = (LatitudeA - LatitudeB)
+else:
+    difference_oflatitude = (LatitudeB - LatitudeA)
+    
+if (LongtitudeA > LongtitudeB):
+    difference_oflongtitude = (LongtitudeA - LongtitudeB)
+else:
+    difference_oflongtitude = (LongtitudeA - LongtitudeB)
+    
+hav_θ = (((difference_oflatitude / 2) + LatitudeA * LatitudeB * (difference_oflongtitude / 2) * 6371.2))
+
+print(hav_θ)
