@@ -1,0 +1,6 @@
+Jari_jari = int(input("jari-jari:"))
+phi = 3.14
+volume = ((4 / 3) * phi * (Jari_jari ** 3))
+
+print(volume) 
+print("m³")
