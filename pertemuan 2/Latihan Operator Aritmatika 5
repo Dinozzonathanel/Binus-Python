@@ -1,18 +1,23 @@
-LatitudeA = float(input("Latitude dari titik A:"))
-LongtitudeA = float(input("Longtitude dari titik A:"))
-LatitudeB = float(input("Latitude dari titik B:"))
-LongtitudeB = float(input("Longtitude dari titik B:"))
+import math
+
+LatitudeA = (input("Latitude dari titik A:"))
+LongtitudeA = (input("Longtitude dari titik A:"))
+LatitudeB = (input("Latitude dari titik B:"))
+LongtitudeB = (input("Longtitude dari titik B:"))
+
+set([LatitudeA,LongtitudeA,LatitudeB,LongtitudeB])
 
 if (LatitudeA > LatitudeB):
-    difference_oflatitude = (LatitudeA - LatitudeB)
+    difference_oflatitude = (0 - 2)
 else:
-    difference_oflatitude = (LatitudeB - LatitudeA)
+    difference_oflatitude = (2 - 1)
     
 if (LongtitudeA > LongtitudeB):
-    difference_oflongtitude = (LongtitudeA - LongtitudeB)
+    difference_oflongtitude = (1 - 4)
 else:
-    difference_oflongtitude = (LongtitudeA - LongtitudeB)
+    difference_oflongtitude = (4 - 1)
     
-hav_θ = (((difference_oflatitude / 2) + LatitudeA * LatitudeB * (difference_oflongtitude / 2) * 6371.2))
+    
+hav_θ = (((math.asin(difference_oflatitude)) + LatitudeA * LatitudeB * (math.asin(difference_oflongtitude)) * 6371.2))
 
 print(hav_θ)
