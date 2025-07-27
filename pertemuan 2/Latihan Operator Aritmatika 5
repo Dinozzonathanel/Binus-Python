@@ -1,23 +1,24 @@
 import math
 
-LatitudeA = (input("Latitude dari titik A:"))
-LongtitudeA = (input("Longtitude dari titik A:"))
-LatitudeB = (input("Latitude dari titik B:"))
-LongtitudeB = (input("Longtitude dari titik B:"))
+lat1 = (input("latitude1"))
+lon1 = (input("longtitude1"))
+lat2 = (input("latitude2"))
+lon2 = (input("longtitude2"))
 
-set([LatitudeA,LongtitudeA,LatitudeB,LongtitudeB])
+distancelat = (float(lat2) - float(lat1)) * 3.14 / 180.0
+distancelot = (float(lon2) - float(lon1)) * 3.14 / 180.0
 
-if (LatitudeA > LatitudeB):
-    difference_oflatitude = (0 - 2)
-else:
-    difference_oflatitude = (2 - 1)
-    
-if (LongtitudeA > LongtitudeB):
-    difference_oflongtitude = (1 - 4)
-else:
-    difference_oflongtitude = (4 - 1)
-    
-    
-hav_θ = (((math.asin(difference_oflatitude)) + LatitudeA * LatitudeB * (math.asin(difference_oflongtitude)) * 6371.2))
+def haversine(lat1, lon1, lat2, lon2):
+def haversine(formulapart1, formulapart2)
 
-print(hav_θ)
+	formulapart1 = (pow(math.sin(distanceLat / 2), 2) + 
+         	pow(math.sin(distanceLon / 2), 2) * 
+             	math.cos(lat1) * math.cos(lat2));
+rad = 6371
+    
+formulapart2 = 2 * math.asin(math.sqrt(formulapart1))
+	
+rad * formulapart2
+
+
+print (haversine(lat1, lon1,lat2, lon2))
