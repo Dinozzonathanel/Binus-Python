@@ -9,12 +9,12 @@ distancelat = (float(lat2) - float(lat1)) * 3.14 / 180.0
 distancelot = (float(lon2) - float(lon1)) * 3.14 / 180.0
 
 def haversine(lat1, lon1, lat2, lon2):
-def haversine(formulapart1, formulapart2)
+    def haversine(formulapart1, formulapart2):
 
-	formulapart1 = (pow(math.sin(distanceLat / 2), 2) + 
-         	pow(math.sin(distanceLon / 2), 2) * 
-             	math.cos(lat1) * math.cos(lat2));
-rad = 6371
+    formulapart1 = (pow(math.sin(distanceLat / 2), 2) + pow(math.sin(distanceLon / 2), 2)
+    math.cos(lat1) * math.cos(lat2));
+
+    rad = 6371
     
 formulapart2 = 2 * math.asin(math.sqrt(formulapart1))
 	
