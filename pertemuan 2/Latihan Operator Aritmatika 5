@@ -1,24 +1,38 @@
 import math
 
-lat1 = (input("latitude1"))
-lon1 = (input("longtitude1"))
-lat2 = (input("latitude2"))
-lon2 = (input("longtitude2"))
+print("Informasi, input untuk latitude atau longtitude")
+print("Arah Timur positif, arah Barat negatif, Utara positif, Selatan negatif")
+lat1 = float(input("latitude1 : "))
+lon1 = float(input("longtitude1 : "))
+lat2 = float(input("latitude2 : "))
+lon2 = float(input("longtitude2 : "))
 
-distancelat = (float(lat2) - float(lat1)) * 3.14 / 180.0
-distancelot = (float(lon2) - float(lon1)) * 3.14 / 180.0
+#lat1 = float(38.898)
+#lon1 = float(-77.037)
+#lat2 = float(48.858)
+#lon2 = float(2.294)
 
-def haversine(lat1, lon1, lat2, lon2):
-    def haversine(formulapart1, formulapart2):
+#kita perlu convert dari degrees ke radians
+lat1_radians = math.radians(lat1)
+lon1_radians = math.radians(lon1)
+lat2_radians = math.radians(lat2)
+lon2_radians = math.radians(lon2)
 
-    formulapart1 = (pow(math.sin(distanceLat / 2), 2) + pow(math.sin(distanceLon / 2), 2)
-    math.cos(lat1) * math.cos(lat2));
+#begitu juga hasil penguranan dari lat dan long convert ke radians
+d_lat = math.radians(lat2 - lat1)
+d_lon = math.radians(lon2 - lon1)
+#print(lat2-lat1)
+#print(lon2-lon1)
 
-    rad = 6371
-    
-formulapart2 = 2 * math.asin(math.sqrt(formulapart1))
-	
-rad * formulapart2
+#masukan dalam rumus haversine
+tmp = math.sin(d_lat / 2)**2 + math.cos(lat1_radians) * math.cos(lat2_radians) * math.sin(d_lon / 2)**2
+#print( math.cos(lat1_radians))
+c = 2 * math.asin(math.sqrt(tmp))
+#print(tmp)
+#print(c)
+# Radius bumi menggunakan miles
+R = 6371.0
 
+jarak = R * c
 
-print (haversine(lat1, lon1,lat2, lon2))
+print(f"Jarak antar titik adalah: {jarak:.2f} km")
