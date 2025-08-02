@@ -1,0 +1,26 @@
+print ("""Celsius to Fahrenheit = 1
+Celsius to Kelvin = 2
+Fahrenheit to Celsius = 3
+Fahrenheit to Kelvin = 4
+Kelvin to Celsius = 5
+Kelvin ke Fahrenheit = 6""")
+conversion = float(input("which menu :"))
+
+if (conversion == 1):
+    temp1 = int(input("how much °C :"))
+    print((temp1 *(9 / 5)) + 32)
+elif (conversion == 2):
+    temp1 = int(input("how much °C :"))
+    print((temp1 + 273.15))
+elif (conversion == 3):
+    temp1 = int(input("how much °F :"))
+    print((temp1 - 32) * (5 / 9))
+elif (conversion == 4):
+    temp1 = int(input("how much °F :"))
+    print(((temp1 - 32) * (5 / 9)) + 273.15)
+elif (conversion == 5):
+    temp1 = float(input("how much °K :"))
+    print(temp1 - 273.15)
+elif (conversion == 6):
+    temp1 = float(input("how much °K :"))
+    print((temp1 * (9 / 5)) - 459.67)
