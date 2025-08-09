@@ -1,0 +1,30 @@
+continuem = "y"
+
+while(True):
+    if (continuem == "y"):
+        side1 = float(input("side1 :"))
+        side2 = float(input("side2 :"))
+        side3 = float(input("side3 :")) 
+        
+        sides = sorted([side1,side2,side3])
+        a, b, c = sides
+        
+        if (side1 + side2 < side3):
+            print("this is not a triagle")
+            continuem = input("would you like me to repeat? (y/n)")
+        
+        if round(a**2 + b**2, 5) == round(c**2, 5):
+            print("This is a right-angled triangle.")
+            continuem = input("would you like me to repeat? (y/n)")
+        elif side1 == side2 == side3:
+            print("This is an equilateral triangle.")
+            continuem = input("would you like me to repeat? (y/n)")
+        elif side1 == side2 or side2 == side3 or side1 == side3:
+            print("This is an isosceles triangle.")
+            continuem = input("would you like me to repeat? (y/n)")
+        else:
+            print("This is a scalene triangle.")
+            continuem = input("would you like me to repeat? (y/n)")
+    else:
+        print("Program was End")
+        break
