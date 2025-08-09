@@ -1,0 +1,46 @@
+itsclobberintime = "y"
+
+
+while(itsclobberintime == "y"):
+    if (itsclobberintime == "y"):
+        categorya = float(input("nilai akedemis :"))
+        categoryb = float(input("nilai olahraga :"))
+        rata_rata = (categorya * categoryb) / 4 
+        if (rata_rata == 4.00):
+            print("rata-rata nilai-nilai mu adalah 4.00 atau A")
+            itsclobberintime = input("would you like to try again?(y/n)")
+        elif (rata_rata == 3.75):
+            print("rata-rata nilai-nilai mu adalah 3.75 atau A-")
+            itsclobberintime = input("would you like to try again?(y/n)")
+        elif (rata_rata == 3.50):
+            print("rata-rata nilai-nilai mu adalah 3.50 atau B+")
+            itsclobberintime = input("would you like to try again?(y/n)")
+        elif (rata_rata == 3.00):
+            print("rata-rata nilai-nilai mu adalah 3.00 atau B")
+            itsclobberintime = input("would you like to try again?(y/n)")
+        elif (rata_rata == 2.75):
+            print("rata-rata nilai-nilai mu adalah 2.75 atau B-")
+            itsclobberintime = input("would you like to try again?(y/n)")
+        elif (rata_rata == 2.50):
+            print("rata-rata nilai-nilai mu adalah 2.50 atau C+")
+            itsclobberintime = input("would you like to try again?(y/n)")
+        elif (rata_rata == 2.00):
+            print("rata-rata nilai-nilai mu adalah 2.00 atau C")
+            itsclobberintime = input("would you like to try again?(y/n)")
+        elif (rata_rata == 1.75):
+            print("rata-rata nilai-nilai mu adalah 1.75 atau C-")
+            itsclobberintime = input("would you like to try again?(y/n)")
+        elif (rata_rata == 1.50):
+            print("rata-rata nilai-nilai mu adalah 1.50 atau D")
+            itsclobberintime = input("would you like to try again?(y/n)")
+        elif (rata_rata == 1.20):
+            print("rata-rata nilai-nilai mu adalah 1.20 atau E")
+            itsclobberintime = input("would you like to try again?(y/n)")
+        else:
+            print("thank you")
+            break
+            
+            
+            
+            
+            
