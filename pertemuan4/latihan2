@@ -9,11 +9,10 @@ for i in range(maxnumber,0,-1):
             temp = temp + str(i)
     temp = temp + "\n"
     
-
+# ending point tidak terhitung maka maxnumber + 1 agar terhitung
 for i in range(2,maxnumber + 1,1):
     for j in range(0, i, 1):
          temp = temp + str(i)
     temp = temp + "\n"
 
 print (temp)
-
