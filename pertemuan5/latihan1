@@ -1,0 +1,60 @@
+print("""___________
+|Zozo paling|
+|    aneh   |
+|___________|""")
+
+def addition(value1 = 0, value2 = 0):
+   result = value1 + value2
+   return result
+   
+def subtraction(value1 = 0, value2 = 0):
+    result = value1 - value2
+    return result
+
+def multiplication(value1 = 0, value2 = 0):
+    result = value1 * value2
+    return result
+    
+def division(value1 = 0, value2 = 0):
+    result = value1 / value2
+    return result
+    
+def modulo_operation(value1 = 0, value2 = 0):
+    result = value1 - value2
+    return result
+   
+   
+   
+while (True):
+    menu = input("masukan menu (+|-|/|*|%|stop):")
+    
+    if (menu == "+"):
+        nilai1 = float(input("value1 ="))
+        nilai2 = float(input("value2 ="))
+        hasil = addition(nilai1, nilai2)
+        print("hasil dari", str(nilai1), "+", str(nilai2), "adalah", str(hasil))
+    elif (menu == "-"):
+        nilai1 = float(input("value1 ="))
+        nilai2 = float(input("value2 ="))
+        hasil = subtraction(nilai1, nilai2)
+        print("hasil dari", str(nilai1), "-", str(nilai2), "adalah", str(hasil))
+    elif (menu == "*"):
+        nilai1 = float(input("value1 ="))
+        nilai2 = float(input("value2 ="))
+        hasil = multiplication(nilai1, nilai2)
+        print("hasil dari", str(nilai1), "*", str(nilai2), "adalah", str(hasil))
+    elif (menu == "/"):
+        nilai1 = float(input("value1 ="))
+        nilai2 = float(input("value2 ="))
+        hasil = division(nilai1, nilai2)
+        print("hasil dari", str(nilai1), "/", str(nilai2), "adalah", str(hasil))
+    elif (menu == "%"):
+        nilai1 = float(input("value1 ="))
+        nilai2 = float(input("value2 ="))
+        hasil = modulo_operation(nilai1, nilai2)
+        print("hasil dari", str(nilai1), "%", str(nilai2), "adalah", str(hasil))
+    elif (menu == "stop"):
+        print("thank you for using this program")
+        break
+    
+    
