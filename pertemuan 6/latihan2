@@ -1,0 +1,64 @@
+class DataObject:
+    """Base data"""
+    count = 0
+
+    def __init__(self, name="none", score=0):
+        self.name = name
+        self.score = score
+
+    def dataprint(self):
+        print("name:", self.name, "\nscore:", self.score)
+
+    def datadeletion(self):
+        self.name = "none"
+        self.score = 0
+
+    def dataeditname(self):
+        self.name = newname
+        
+    def dataeditscore(self):    
+        self.score = newscore
+
+    def datainput(self):
+        self.name = nameinput
+        self.score = namescore
+
+
+inputteddata = DataObject()
+
+programrunning = True
+
+while programrunning:
+    programmenu = input(""" --- Welcome to the n&s saver ---
+a. input data
+b. delete data
+c. check data
+d. edit data
+e. end program
+Choose option: """)
+
+    if programmenu == "a":
+        nameinput = input("name: ")
+        namescore = int(input("score/value: "))
+        inputteddata.datainput()
+
+    elif programmenu == "b":
+        inputteddata.datadeletion()
+
+    elif programmenu == "c":
+        inputteddata.dataprint()
+
+    elif programmenu == "d":
+        editoption = input("Edit name or score? (name/score): ")
+        if editoption == "name":
+            newname = input("new name: ")
+            inputteddata.dataeditname()
+        elif editoption == "score":
+            newscore = int(input("new score/value: "))
+            inputteddata.dataeditscore()
+
+    elif programmenu == "e":
+        programrunning = False
+        print("Thank you for using this program")
+    else:
+        print("Invalid option, try again")
