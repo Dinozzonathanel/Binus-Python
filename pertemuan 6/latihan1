@@ -1,0 +1,28 @@
+SiswadataA = (input("tell me your name :"))
+SiswadataB = (input("tell me your class :"))
+Siswadatac = (input("tell me your avarage score :"))
+
+
+
+class Siswa:
+    "the base for all students"
+    count = 0
+    
+    def __init__(self, name="student", score=100):
+        self.name = SiswadataA
+        self.kelas = SiswadataB
+        self.score = Siswadatac
+
+    def namenclass (self):
+        print("name:", self.name, """
+current class:""", self.kelas)
+
+    def averagecurrentscore (self):
+        print("Average score:", self.score)
+    
+
+resultfornandc = Siswa(SiswadataA, SiswadataB)
+resultforaverage = Siswa(Siswadatac)
+
+resultfornandc.namenclass()
+resultfornandc.averagecurrentscore()
